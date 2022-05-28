@@ -1,0 +1,3 @@
+para usar o C/C++ no VScode é só fazer a programação em um arquivo C/C++ e depois apertar F6
+
+Alt + 92 = \ (contra-barra)
