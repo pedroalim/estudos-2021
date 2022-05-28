@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Área do Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+        <h1 id="titulo">Cadastro da Loja</h1>
+        <h3 id="subtitulo">Coloque seus dados de cadastro nos campos abaixo</h3>
+        <hr>
+    <form>
+        <p><strong>Dados Pessoais</strong></p>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required placeholder="Obrigatório" autofocus>
+            </div>
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required placeholder="Obrigatório">
+            </div>
+            <div class="campo">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" id="senha" required placeholder="Obrigatório">
+            </div>
+        </fieldset>
+        <hr>
+        <p><strong>Dados de Endereço</strong></p>
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="estado">Estado</label>
+                <select id="estado" required>
+                    <option>Acre</option><option>Alagoas</option><option>Amapá</option><option>Amazonas</option><option>Bahia</option><option>Ceará</option><option>Distrito Federal</option><option>Espírito Santo</option><option>Goiás</option><option>Maranhão</option><option>Mato Grosso</option><option>Mato Grosso do Sul</option><option>Minas Gerais</option><option>Pará</option><option>Paraíba</option><option>Paraná</option><option>Pernambuco</option><option>Piauí</option><option>Rio de Janeioro</option><option>Rio Grande do Norte</option><option>Rio Grande do Sul</option><option>Rondônia</option><option>Roraima</option><option>Santa Catarina</option><option>São Paulo</option><option>Sergipe</option><option>Tocantins</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade" placeholder="Obrigatório">
+            </div>
+            <div class="campo">
+                <label for="CEP">CEP</label>
+                <input type="number" name="CEP" id="CEP" placeholder="Obrigatório">
+            </div>
+            <div class="campo">
+                <label for="endereço">Endereço</label>
+                <input type="text" name="endereço" id="endereço" placeholder="Obrigatório">
+            </div>
+            <div class="campo">
+                <label for="complemento">Complemento</label>
+                <input type="text" name="complemento" id="complemento" placeholder="Opcional">
+            </div>
+        </fieldset>
+        <hr>
+        <p><strong>Preferências</strong></p>
+        <fieldset id="preferencia">
+            <div class="campo">
+                <label>Selecione os temas de preferência:</label>
+                <br><br>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" id="tema1" value="gamesperifericos">
+                                <label for="tema1">Games e periféricos</label></td>
+                                
+                                <td><input type="checkbox" id="tema2" value="eletronicos">
+                                <label for="tema2">Eletrônicos</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="tema3" value="livros">
+                                <label for="tema3">Livros</label></td>
+
+                                <td><input type="checkbox" id="tema4" value="brinquedos">
+                                <label for="tema4">Brinquedos</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="tema5" value="eletrodomesticos">
+                                <label for="tema5">Eletrodomésticos</label></td>
+
+                                <td><input type="checkbox" id="tema6" value="ferramentas">
+                                <label for="tema6">Ferramentas</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" id="tema7" value="tabuleiros">
+                                <label for="tema7">Tabuleiros</label></td>
+
+                                <td><input type="checkbox" id="tema8" value="moda">
+                                <label for="tema8">Moda</label></td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </div>
+            <div class="campo">
+                <label>Você quer ser notificado sobre promoções e atualizações no seu email?</label>
+                <br><br>
+                <label><input type="radio" name="notificado" value="sim" checked> Sim, quero ser notificado sobre promoções e atualizações.</label>
+                <br>
+                <label><input type="radio" name="notificado" value="nao"> Não, não quero ser notificado sobre promoções e atualizações.</label>
+            </div>
+        </fieldset>
+        <br>
+        <button class="botao" type="submit" onsubmit="">Enviar Dados</button>
+    </form>
+</main>
+</body>
+</html>

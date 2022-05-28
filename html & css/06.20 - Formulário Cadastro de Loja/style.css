@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 75%;
+    max-width: 700px;
+    margin: auto;
+
+    font-size: 1em;
+    font-family: 'lato';
+    color: #000;
+
+    background-image: url(https://images.wallpaperscraft.com/image/single/lines_dark_background_surface_91700_1920x1080.jpg);
+    background-attachment: scroll;
+}
+
+main {
+    margin-top: 30px;
+    padding: 20px 40px;
+
+    border-width: medium;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #000;
+
+    background: rgba(255, 255, 255, 0.8);
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+hr {
+    margin: 8px 0px;
+}
+
+#titulo, #subtitulo {
+    margin: 0;
+    text-align: center;
+}
+
+fieldset {
+    border: 0;
+}
+
+input, select, textarea, button {
+    padding: 2px;
+    font-size: 1em;
+    border-radius: 5px;
+    color: #000; /* cor do texto dentro das caixas */
+}
+
+input[type="text"], input[type="email"], input[type="password"], select {
+    border: 2px solid #000;
+}
+
+.campo {
+    margin: 3px 0px;
+}
+
+#preferencia .campo {
+    margin-bottom: 15px;
+}
+
+#preferencia label {
+    margin-right: 10px;
+}
+
+.campo input:focus, .campo select:focus {
+    background: rgba(215, 215, 215);
+}
+
+.botao {
+    width: 30%;
+    margin-left: 35%;
+}
+
+.botao:hover {
+    background: rgba(215, 215, 215);
+}

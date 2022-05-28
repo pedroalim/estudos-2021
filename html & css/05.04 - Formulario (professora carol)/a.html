@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+<section>
+    <header>
+        <h1>Novidades sobre FORMULÁRIOS</h1>
+    </header>
+</section>
+<section>
+    <form action="exemplo.php" method="GET" id="form1">
+        <!--
+            input type="week" - Faz a caixa receber apenas a semana e o ano
+            input type="month" - Faz a caixa receber apenas o mês e o ano
+            input type="number" - Faz a caixa receber apenas números
+            input type="datetime-local" - Faz a caixa colocar datas e horário
+            input type="search" - Coloca a opção na caixa de texto de apagar todo o texto da caixa
+            input type="email" - Muda o tipo da label para EMAIL
+
+            formmethod="POST" ou "GET" - coloca a forma que irá enviar os dados do formulario diretamente na linha, sem precisar ser no <form>
+            placeholder="..." - coloca uma mensagem no campo de preenchimento             
+            required - exige que o item em questão seja preenchido antes de enviar os dados 
+            autofocus - foca a atenção do formulário no item em questão
+        -->
+        <label>Semana:<input type="week" name="semana"></label>
+        <label>Mês:<input type="month" name="mes"></label>
+        <label>Data:<input type="datetime-local" name="data"></label>
+        <label>Nome:<input type="text" name="nome" placeholder="Coloque seu nome" required></label>
+        <label>Email:<input type="email" name="email" placeholder="Coloque seu email" autofocus></label>
+        <label>Senha:<input type="password" name="senha" required></label>
+        <input type="submit" value="enviar dados">
+    </form>
+    <p>Profissão: <input type="text" name="profissão" form="form1"></p>
+</section>
+</body>
+</html>
