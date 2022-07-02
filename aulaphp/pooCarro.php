@@ -22,7 +22,7 @@
                 echo "<br> buzina não funcionado";
             }
         }
-     
+    
         function voar(){
             if($this->velocidade >= 200){
                 echo "<br> carro muito rápido = VRUUUMM";
@@ -44,5 +44,5 @@
         $c1->ligar();
         $c1->buzinar();
         $c1->voar();
-     
+    
 ?>

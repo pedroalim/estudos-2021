@@ -14,7 +14,7 @@
     </body>
 </html>
 <?php
-     function romano($num){
+    function romano($num){
         $num = str_replace(0, "- ❌ ",$num);
         $num = str_replace(1, "- I ",$num);
         $num = str_replace(2, "- II ",$num);
@@ -27,10 +27,10 @@
         $num = str_replace(9, "- IX ",$num);
 
         return $num;
-     }
+    }
 
-     $numeroModerno = $_GET["numModerno"] = (isset($_GET["numModerno"])) ? $_GET["numModerno"] : null;
-     $numeroModerno_r = romano($numeroModerno);
+    $numeroModerno = $_GET["numModerno"] = (isset($_GET["numModerno"])) ? $_GET["numModerno"] : null;
+    $numeroModerno_r = romano($numeroModerno);
 
-     echo "Número em romano = $numeroModerno_r";
+    echo "Número em romano = $numeroModerno_r";
 ?>
