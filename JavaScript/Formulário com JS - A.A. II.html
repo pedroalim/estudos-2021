@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Atividade Avaliativa - II</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style atividade avaliativa II.css">
+
+    <script>
+        function papaleguas(){
+            var res1 = document.formulario.questao1.value;
+            var res2 = document.formulario.questao2.value;
+            var res3 = document.formulario.questao3.value;
+            var res4 = document.formulario.questao4.value;
+            var res5 = document.formulario.questao5.value;
+            var nota = 0;
+
+            if(res1 == 2){
+                nota = nota + 2;
+            }if(res2 == 2){
+                nota = nota + 2;
+            }if(res3 == 2){
+                nota = nota + 2;
+            }if(res4 == 2){
+                nota = nota + 2;
+            }if(res5 == 2){
+                nota = nota + 2;
+            }
+
+            if(nota >= 7){
+                alert("Parabéns!! Você tirou "+nota+", e foi aprovado!!");
+            }else if(nota >= 5 && nota < 7){
+                alert("Sua nota foi "+nota+", você ficou de recuperação.")
+            }
+            else{
+                alert("Você tirou "+nota+" e foi reprovado.");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 id="titulo">Responda as seguintes questões sobre a <i>Guerra Fria</i> e a <i>2ª Guerra Mundial</i>:</h1><br>
+
+    <form method="POST" name="formulario">
+        <div class="questão">
+            <h3>1° QUESTÃO</h3>
+            <p>Quais foram os 2 principais países que fizeram parte da famosa 'Guerra Fria'?</p>
+        
+            <input type="radio" id="1a" value="0" name="questao1">
+            <label for="1a">Alemanha e Estados Unidos.</label><br>
+            <input type="radio" id="1b" value="0" name="questao1">
+            <label for="1b">Russia e Alemanha.</label><br>
+            <input type="radio" id="1c" value="2" name="questao1">
+            <label for="1c">Russia e Estados Unidos.</label><br> <!-- RESPOSTA CERTA -->
+            <input type="radio" id="1d" value="0" name="questao1">
+            <label for="1d">Japão e Russia.</label><br>
+            <input type="radio" id="1e" value="0" name="questao1">
+            <label for="1e">Russia e Holanda.</label><br>
+        </div>
+
+        <div class="questão">
+            <h3>2° QUESTÃO</h3>
+            <p>Quais são os 3 países que formaram o grupo chamado 'Aliados' durante a '2ª Guerra Mundial'?</p>
+
+            <input type="radio" id="2a" value="0" name="questao2">
+            <label for="2a">Russia, Estados Unidos e França.</label><br>
+            <input type="radio" id="2b" value="2" name="questao2">
+            <label for="2b">Inglaterra, França e Estados Unidos.</label><br> <!-- RESPOSTA CERTA -->
+            <input type="radio" id="2c" value="0" name="questao2">
+            <label for="2c">Polônia, Russia e Inglaterra.</label><br>
+            <input type="radio" id="2d" value="0" name="questao2">
+            <label for="2d">França, Inglaterra e Polônia</label><br>
+            <input type="radio" id="2e" value="0" name="questao2">
+            <label for="2e">Polônia, Russia e França.</label><br>
+        </div>
+
+        <div class="questão">
+            <h3>3° QUESTÃO</h3>
+            <p>A '2ª Guerra Mundial' (1939-1945) adquiriu caráter mundial a partir de 7 de dezembro de 1941, quando:</p>
+
+            <input type="radio" id="3a" value="0" name="questao3">
+            <label for="3a">Os russos tomaram a iniciativa de anexar os Estados Bálticos.</label><br>
+            <input type="radio" id="3b" value="0" name="questao3">
+            <label for="3b">Os alemães invadiram o litoral mediterrâneo da África.</label><br>
+            <input type="radio" id="3c" value="2" name="questao3">
+            <label for="3c">Os japoneses atacaram a base norte-americana de Pearl Harbor.</label><br> <!-- RESPOSTA CERTA -->
+            <input type="radio" id="3d" value="0" name="questao3">
+            <label for="3d">Os franceses, por determinação do marechal Pétain, ocuparam o Sudeste da Ásia.</label><br>
+            <input type="radio" id="3e" value="0" name="questao3">
+            <label for="3e">Os chineses cederam a maior parte de seu território às tropas do Eixo.</label><br>
+        </div>
+
+        <div class="questão">
+            <h3>4° QUESTÃO</h3>
+            <p>Qual dos acontecimentos seguintes não teve relação com a 'Guerra Fria':</p>
+
+            <input type="radio" id="4a" value="2" name="questao4">
+            <label for="4a">Guerra Civil Espanhola.</label><br> <!-- RESPOSTA CERTA -->
+            <input type="radio" id="4b" value="0" name="questao4">
+            <label for="4b">Guerra da Coreia.</label><br>
+            <input type="radio" id="4c" value="0" name="questao4">
+            <label for="4c">Revolução Cubana.</label><br>
+            <input type="radio" id="4d" value="0" name="questao4">
+            <label for="4d">Ditaduras latino-americanas.</label><br>
+            <input type="radio" id="4e" value="0" name="questao4">
+            <label for="4e">Guerra do Afeganistão.</label><br>
+        </div>
+
+        <div class="questão">
+            <h3>5° QUESTÃO</h3>
+            <p>Qual foi o grupo que ficou responsável pelo fuzilamento de judeus nas regiões ocupadas pelos alemães?</p>
+
+            <input type="radio" id="5a" value="0" name="questao5">
+            <label for="5a">Sturmabteilung</label><br>
+            <input type="radio" id="5b" value="0" name="questao5">
+            <label for="5b">Schutzstaffel</label><br>
+            <input type="radio" id="5c" value="0" name="questao5">
+            <label for="5c">Gestapo</label><br>
+            <input type="radio" id="5d" value="0" name="questao5">
+            <label for="5d">Kriegsmarine</label><br>
+            <input type="radio" id="5e" value="2" name="questao5">
+            <label for="5e">Einsatzgruppen</label><br> <!-- RESPOSTA CERTA -->
+        </div>
+
+        <br><button onclick="papaleguas()">Corrigir</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="pt-br">
+    <title>Exercício de Javascript</title>
+    <meta charset="UTF-8">
+    <script>
+        function mostrar(){
+            var nome = document.formulario.nome.value;
+            var sobrenome = document.formulario.sobrenome.value;
+            alert("Seu login é: "+nome+"."+sobrenome)
+        }
+    </script>
+</head>
+<body>
+<form method="POST" name="formulario">
+    <p>Nome: <input type="text" name="nome"></p><br>
+    <p>Sobrenome: <input type="text" name="sobrenome"></p><br>
+
+    <input type="submit" value="enviar" onclick="javascript:mostrar()">
+</form>
+</body>
+</html>
